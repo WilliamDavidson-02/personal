@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F5E7D9;
+}
+
+.landingContainer {
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.profileImg {
+    width: 500px;
+    border-radius: 100%;
+    border: rgba(222, 168, 144, .5) solid 15px;
+}
+
+
+colors {
+    color: #353A47
+    #F5E7D9
+    #E2E7AA
+    #d69d85
+}
