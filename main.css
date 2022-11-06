@@ -1,49 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
-
-/* mouse */
-html {
-    cursor: none;
-}
-
-body:hover > #trailer {
-    opacity: 1;
-}
-  
-#trailer {
-    height: 15px;
-    width: 15px;
-    background-color: rgba(255, 255, 255, 0);
-    border: rgba(255, 255, 255, 0.5) solid 3px;
-    border-radius: 15px;
-    
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    z-index: 10000;
-    
-    pointer-events: none;
-    opacity: 0;
-    transition: opacity 500ms ease;
-    
-    display: grid;
-    place-items: center;
-} 
-/* mouse */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 body {
     margin: 0;
     padding: 0;
     background-color: #00021e;
-    font-family: 'Merriweather', serif;
+    font-family: 'Raleway', sans-serif;
     overflow-x: hidden;
 }
 
 nav {
-    padding: 100px;
+    height: 100vh;
+    display: grid;
+    place-content: center;
 }
 
 .landingContainer {
-    height: 100vh;
     display: flex;
     justify-content: center;
 }
@@ -58,12 +29,17 @@ nav {
 .navli  {
     color: white;
     list-style: none;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 700;
     text-transform: uppercase;
     opacity: 0;
     padding-left: 50px;
     padding-right: 50px;
+    transition: ease .3s;
+}
+
+a:hover {
+    color: #b9b9b9;
     transition: ease .3s;
 }
 
@@ -96,10 +72,11 @@ nav {
     border: 1PX solid rgba(255, 255, 255, 0.1);
     background: linear-gradient(150deg, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0.05) 100%);
     transition: ease .2s;
+    position: relative;
+    cursor: pointer;
 }
 
 .img {
-    position: relative;
     width: 100%;
     height: 200px;
     display: flex;
@@ -107,7 +84,7 @@ nav {
 }
 
 .glowicon {
-    box-shadow: 0px 0px 40px 30px rgba(18, 1, 47, 0.5);
+    box-shadow: 0px 0px 40px 30px rgba(97, 7, 148, 0.25);
     transition: ease .2s;
 }
 
@@ -130,6 +107,41 @@ nav {
     }
 }
 
-colors {
-    color: #00021e
+a {
+    text-decoration: none;
+    color: white;
+    transition: ease .3s;
+}
+
+/* about section */
+section {
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+.introContainer {
+
+}
+
+.introinfo {
+    padding: 200px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 0.1) 100%);
+    border-radius: 50px;
+    border: 1PX solid rgba(255, 255, 255, 0.1);
+}
+
+.infospan {
+    color: white;
+    font-size: 2rem;
 }
