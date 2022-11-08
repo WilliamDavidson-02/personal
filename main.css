@@ -116,6 +116,7 @@ a {
 /* about section */
 section {
     height: 100vh;
+    width: 100%;
     display: grid;
     place-content: center;
 }
@@ -130,18 +131,102 @@ h1 {
     font-size: 3rem;
 }
 
-.introContainer {
 
+.abox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.introinfo {
-    padding: 200px;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 0.1) 100%);
-    border-radius: 50px;
-    border: 1PX solid rgba(255, 255, 255, 0.1);
-}
-
-.infospan {
+.aboutbox {
+    width: 400px;
+    height: 400px;
     color: white;
-    font-size: 2rem;
+    background: linear-gradient(150deg, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0.05) 100%);
+    border: 1PX solid rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* portfolio */
+#portfolio {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.portcard {
+    transition: ease .3s;
+    cursor: pointer;
+    box-shadow: -40px 0px 30px -20px rgb(1, 2, 18);
+    background-color: #00021e;
+}
+
+.portcard:hover {
+    transform: rotate(7deg) translateX(-15%);
+    transition: ease .3s;
+}
+
+.portbox {
+    display: inline-flex;
+    position: relative;
+    width: 1060px;
+}
+
+.box2 {
+    position: absolute;
+    left: 200px;
+}
+.box3 {
+    position: absolute;
+    left: 400px;
+}
+.box4 {
+    position: absolute;
+    left: 600px;
+}
+.filler {
+    position: absolute;
+    left: 950px;
+    width: 150px;
+    height: 500px;
+    background-color: #00021e;
+    box-shadow: -60px -35px 40px -30px rgba(0, 2, 22, .9);
+}
+.box5 {
+    position: absolute;
+    left: 950px;
+    width: 150px;
+    height: 600px;
+    bottom: -100px;
+    background-color: #00021e;
+}
+
+.portheader {
+    margin-right: 120px;
+}
+
+.portimg {
+    width: 300px;
+    height: 150px;
+    opacity: .5;
+    transition: ease .3s;
+    object-fit: contain;
+}
+
+.portimg:hover {
+    opacity: 1;
+    transition: ease .3s;
+}
+
+.portspan {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
 }
