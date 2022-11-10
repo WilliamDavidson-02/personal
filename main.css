@@ -3,7 +3,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #00021e;
+    background-color: #252c35;
     font-family: 'Raleway', sans-serif;
     overflow-x: hidden;
 }
@@ -29,7 +29,7 @@ nav {
 .navli  {
     color: white;
     list-style: none;
-    font-size: 3rem;
+    font-size: 5rem;
     font-weight: 700;
     text-transform: uppercase;
     opacity: 0;
@@ -84,7 +84,7 @@ a:hover {
 }
 
 .glowicon {
-    box-shadow: 0px 0px 40px 30px rgba(97, 7, 148, 0.25);
+    box-shadow: 0px 0px 40px 30px rgba(255, 255, 255, 0.25);
     transition: ease .2s;
 }
 
@@ -123,7 +123,6 @@ section {
 
 h1 {
     color: white;
-    text-align: center;
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: -0.01em;
@@ -131,11 +130,24 @@ h1 {
     font-size: 3rem;
 }
 
+.aboutspan, .abouth1 {
+    text-transform: uppercase;
+    color: white;
+    font-weight: 900;
+    font-size: 12rem;
+}
 
-.abox {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.aboutsection {
+    padding: 100px;
+}
+
+.grey {
+    transition: ease .3s;
+    color: #1a1f25;
+}
+.grey:hover {
+    color: #fff;
+    transition: ease .3s;
 }
 
 .aboutbox {
@@ -161,8 +173,8 @@ h1 {
 .portcard {
     transition: ease .3s;
     cursor: pointer;
-    box-shadow: -40px 0px 30px -20px rgb(1, 2, 18);
-    background-color: #00021e;
+    box-shadow: -40px 0px 30px -20px rgba(0, 0, 0, .6);
+    background-color: #252c35;
 }
 
 .portcard:hover {
@@ -193,8 +205,8 @@ h1 {
     left: 950px;
     width: 150px;
     height: 500px;
-    background-color: #00021e;
-    box-shadow: -60px -35px 40px -30px rgba(0, 2, 22, .9);
+    background-color: #252c35;
+    box-shadow: -60px -35px 40px -30px rgba(0, 0, 0, 0.5);
 }
 .box5 {
     position: absolute;
@@ -202,7 +214,7 @@ h1 {
     width: 150px;
     height: 600px;
     bottom: -100px;
-    background-color: #00021e;
+    background-color: #252c35;
 }
 
 .portheader {
