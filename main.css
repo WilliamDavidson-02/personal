@@ -242,3 +242,140 @@ h1 {
     font-weight: 700;
     text-align: center;
 }
+
+/* services */
+.servContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#services {
+    background-color: #fff;
+}
+
+.servtext {
+    color: #252c35;
+    font-weight: 900;
+    font-size: 10rem;
+}
+
+.servbox {
+    margin-right: 50px;
+    margin-left: 50px;
+    width: 600px;
+    height: 700px;
+    border: #252c35 solid 5px;
+    border-radius: 20px;
+    transition: ease .3s;
+    background-color: #fff;
+    cursor: pointer;
+    display: grid;
+    place-content: center;
+}
+
+.js {
+    width: 450px;
+}
+
+.servbox:hover h1 {
+    color: #fff;
+    transition: ease .3s;
+}
+
+.html:hover {
+    background-color: #FFA500;
+    border-color: #d95631;
+    transition: ease .3s;
+}
+
+.js:hover {
+    background-color: #f7df1e;
+    border-color: #e4a12b;
+    transition: ease .3s;
+}
+
+.css:hover {
+    background-color: #33a9dd;
+    border-color: #0d74b7;
+    transition: ease .3s;
+}
+
+
+.expandjs {
+    width: 600px;
+    height: 900px;
+    background-color: #f7df1e;
+    border-color: #e4a12b;
+}
+
+.expandjs h1 {
+    color: #fff;
+}
+
+.expandhtml {
+    width: 750px;
+    height: 900px;
+    background-color: #FFA500;
+    border-color: #d95631;
+}
+
+.expandhtml h1 {
+    color: #fff;
+}
+
+.expandcss {
+    width: 750px;
+    height: 900px;
+    background-color: #33a9dd;
+    border-color: #0d74b7;
+}
+
+.expandcss h1 {
+    color: #fff;
+}
+
+.servop {
+    opacity: .1;
+}
+
+/* Contact */
+.inputContact {
+    background-color: #1a1f25;
+    color: rgba(255, 255, 255, .3);
+    font-size: 4rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 20px;
+    padding: 100px;
+    margin: 10px;
+    transition: ease .3s;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, .3);
+}
+
+#sumbitemail:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #252c35;
+    transition: ease .3s;
+}
+
+#sumbitemail {
+    padding: 50px;
+    font-size: 6rem; 
+    font-weight: 700;
+}
+
+textarea {
+    resize: none;
+    outline: none;
+}
