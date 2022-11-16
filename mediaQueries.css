@@ -1,0 +1,18 @@
+@media (max-width: 1920px) {
+    .navli {
+        font-size: 3.5rem;
+    }
+    .aboutspan {
+        text-align: center;
+        font-size: 9rem;
+    }
+    .servtext {
+        font-size: 8rem;
+    }
+    .servContainer {
+        width: 90%;
+    }
+    .inputContact {
+        padding: 50px;
+    }
+}
